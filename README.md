@@ -31,3 +31,21 @@
 | `title()`     | Har so‘zni bosh harf bilan yozadi   | -                       | `'hello world'.title()`       | `'Hello World'`|
 | `upper()`     | Katta harfga aylantiradi            | -                       | `'hello'.upper()`             | `'HELLO'`      |
 | `zfill()`     | Boshi 0 bilan to‘ldiriladi          | `width: int`            | `'42'.zfill(5)`               | `'00042'`      |
+
+# Python List metodlari
+
+| Metod         | Nima vazifa qiladi                            | Parametrlari                     | Misol                           | Natija                     |
+|---------------|-----------------------------------------------|----------------------------------|---------------------------------|----------------------------|
+| `append()`    | Oxiriga element qo‘shadi                      | `element`                        | `a = [1, 2]; a.append(3)`       | `[1, 2, 3]`                |
+| `clear()`     | Barcha elementlarni o‘chiradi                 | -                                | `a = [1, 2]; a.clear()`         | `[]`                       |
+| `copy()`      | Ro‘yxatdan nusxa oladi                        | -                                | `b = a.copy()`                  | `b = [1, 2]`               |
+| `count()`     | Belgilangan element necha marta borligini topadi | `element`                     | `[1, 2, 2, 3].count(2)`         | `2`                        |
+| `extend()`    | Boshqa ro‘yxat elementlarini qo‘shadi         | `iterable`                       | `a = [1]; a.extend([2, 3])`     | `[1, 2, 3]`                |
+| `index()`     | Elementning birinchi indeksini topadi         | `element`                        | `[1, 2, 3].index(2)`            | `1`                        |
+| `insert()`    | Belgilangan indeksga element qo‘shadi         | `index, element`                 | `a = [1, 3]; a.insert(1, 2)`    | `[1, 2, 3]`                |
+| `pop()`       | Oxirgi yoki ko‘rsatilgan elementni chiqaradi  | `index (ixtiyoriy)`              | `[1, 2, 3].pop()`               | `3`, `[1, 2]`              |
+| `remove()`    | Belgilangan qiymatdagi elementni o‘chiradi    | `element`                        | `a = [1, 2]; a.remove(2)`       | `[1]`                      |
+| `reverse()`   | Elementlar tartibini teskarisiga o‘zgartiradi | -                                | `a = [1, 2]; a.reverse()`       | `[2, 1]`                   |
+| `sort()`      | Elementlarni tartiblaydi                      | `key=None, reverse=False`        | `a = [3, 1, 2]; a.sort()`       | `[1, 2, 3]`                |
+
+
